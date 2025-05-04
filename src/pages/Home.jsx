@@ -9,7 +9,7 @@ function Home() {
     useEffect(() => {
         const fetchBons = async () => {
             try {
-                const response = await axios.get('http://backendtutam-production.up.railway.app/api/bons');
+                const response = await axios.get('https://backendtutam-production.up.railway.app/api/bons');
                 console.log('Fetched bons:', response.data); // Log data yang diterima
                 setBons(response.data);
                 setTimeout(() => setIsVisible(true), 100); // Animasi fade-in
